@@ -10,7 +10,9 @@ Para realizar la carga de las listas utilizaremos AJAX y nos conectaremos a dos 
 
 1. Asocia la función que cargará el listado de países al evento de carga de la página.
 2. Codifica la llamada a la API y procesa el documento JSON de respuesta. 
-  :bulb: Debes *parsear* el fichero de respuesta para poder obtener la información.
+
+
+    :bulb: Debes *parsear* el fichero de respuesta para poder obtener la información.
 3. Carga la lista de países en el objeto de tipo desplegable.
 4. Asocia el evento de **cambio** del desplegable a la función que cargará el listado de países fronterizos.
 5. Codifica la llamada a la API de países fronterizos y procesa el documento JSON de respuesta.
