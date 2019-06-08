@@ -1,20 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+          height: 50%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+      </style>
+  
 </head>
 <body>
     <form>
-        <label for="country">Países</label>
+        <label for="country">Paises</label>
         <select id="country">
             <option>Cargando...</option>
         </select>
-        <div id='barra'></div>
-        <label for="neighbours">Países fronterizos</label>
-        <textarea id="neighbours" cols="30" rows="10"></textarea>
+        <div id="barra"></div>
+        <label for="neighbours">Paises Fronterizos</label>
+        <textarea id="neighbours" cols="90" rows="20"></textarea>
     </form>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIde4iowTdMnLnV3JgTUUkoqDxN5V0PJA" async defer></script>
+
+ <script src="./scripts/script.js"></script>   
 </body>
 </html>
